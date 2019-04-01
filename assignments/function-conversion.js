@@ -4,7 +4,7 @@
 // console.log("Function was invoked!");
 // };
 // myFunction();
-myFunction = () => {
+let myFunction = () => {
     console.log("Function was invoked!");
 };
 myFunction();
@@ -14,7 +14,7 @@ myFunction();
 // };
 // anotherFunction("Example");
 
-anotherFunction = (param) => {
+let anotherFunction = (param) => {
     return param;
 }
 anotherFunction("Example");
@@ -24,7 +24,7 @@ anotherFunction("Example");
 // };
 // add(1,2);
 
-add = (param1, param2) => {
+let add = (param1, param2) => {
     return param1 + param2;
 }
 add(1,2);
@@ -33,7 +33,8 @@ add(1,2);
 //   return param1 - param2;
 // };
 // subtract(1,2);
-subtract = (param1, param2) => {
+
+let subtract = (param1, param2) => {
     return param1 - param2;
 }
 subtract(1,2);
@@ -45,3 +46,5 @@ subtract(1,2);
 //   return num * 3;
 // });
 // console.log(triple);
+exampleArray = [1,2,3,4];
+const triple = exampleArray.map((num)=> num * 3);
